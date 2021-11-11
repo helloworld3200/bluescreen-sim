@@ -23,7 +23,7 @@ def runmain():
       if event.type == pygame.KEYUP:
         if event.key == pygame.K_ESCAPE:
             running = False
-    drawtext(80, "The quick brown fox jumps over the lazy dog.", (text_x, 0))
+    drawtext(45, "The quick brown fox jumps over the lazy dog.", (text_x, 0))
   pygame.display.quit()
   pygame.quit()
 
