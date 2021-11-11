@@ -3,9 +3,9 @@ from pygame.locals import *
 
 pygame.init()
 
-def drawtext(size, text, pos, colour=(0, 0, 0)):
+def drawtext(size, text, pos, colour=(0, 0, 0), font="Perfect.DOS.VGA.437.ttf"):
   win = pygame.display.get_surface()
-  font = pygame.SysFont("Calibri", size)
+  font = pygame.font.Font(font, size)
   ready_text = font.render(text, True, colour)
   rendered_text = win.blit(ready_text, pos)
   return rendered_text
@@ -23,6 +23,7 @@ def runmain():
       if event.type == pygame.KEYUP:
         if event.key == pygame.K_ESCAPE:
             running = False
+    drawtext(80, "The quick brown fox jumps over the lazy dog.", (text_x, 0))
   pygame.display.quit()
   pygame.quit()
 
