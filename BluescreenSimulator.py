@@ -14,6 +14,7 @@ def runmain():
   win = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
   blue = (0, 0, 255)
   running = True
+  text_x = 0
   pygame.mouse.set_visible(False)
   while running:
     pygame.display.update()
